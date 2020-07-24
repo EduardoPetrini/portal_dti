@@ -1,0 +1,39 @@
+body{
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  
+  header .navbar{
+    border-radius: 0;
+    margin: 0;
+  }
+  
+  main{
+    min-height: 500px;
+    padding: 50px 0;
+  }
+  
+  footer{
+    padding: 30px 0;
+    font-size: 14px;
+    color:  #BBB;
+    background: #222;
+    text-align: center;
+  }
+  .responsive-iframe {
+   
+    width: 100%;
+    height: 100%;
+  }
+
+  .system-block{
+      
+      height: 400px;
+      margin-bottom: 53px;
+  }
+
+  .system-title{
+    border-style: solid;
+    border-width: 1px;
+    border-color: #ccc;
+  }

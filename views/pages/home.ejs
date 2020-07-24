@@ -1,0 +1,27 @@
+<%- contentFor('body') %>
+<h3>> Home</h3>
+<div class="jumbotron">
+    <div class="row">
+        <div class="col-md-12">
+            <table class="table">
+                <thead>
+                    <th>Nome</th>
+                    <th>Tipo</th>
+                    <th>Domínio</th>
+                    <th>Data de Cadastro</th>
+                </thead>
+                <tbody>
+                    <% systemList.map(system => { %>
+                    <tr>
+                        <td><%= system.name %></td>
+                        <td><%= system.type %></td>
+                        <td><%= system.domain %></td>
+                        <td><%= system.date %></td>
+                    </tr>
+                    <% }); %>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+</div>

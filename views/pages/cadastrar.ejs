@@ -1,0 +1,46 @@
+<%- contentFor('body') %>
+<h3>> Cadastrar</h3>
+
+<div class="jumbotron">
+    <div class="row">
+        <form action="/system/save" method="post">
+            <div class="form-group">
+                <label for="name">Nome</label>
+                <input id="name" type="text" name="name" class="form-control">
+            </div>
+            <div class="form-group">
+                <label for="domain">Domínio</label>
+                <input id="domain" type="text" name="domain" class="form-control">
+            </div>
+            <div class="form-group">
+                <label for="type">Tipo</label>
+                <select name="type" id="type" class="form-control">
+                    <option value=""></option>
+                    <option value="iframe">iframe</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="embed">Incorporar</label>
+                <input id="embed" type="text" name="embed" class="form-control">
+            </div>
+            <button type="submit">Salvar</button>
+        </form>
+    </div>
+    <div class="row">
+
+        <% dangers.map(msg => { %>
+        <hr />
+        <div class="alert alert-danger" role="alert">
+            <%= msg%>
+        </div>
+        <% }); %>
+
+        <% success.map(msg => { %>
+        <hr />
+        <div class="alert alert-success" role="alert">
+            <%= msg%>
+        </div>
+        <% }); %>
+
+    </div>
+</div>
