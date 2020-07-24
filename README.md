@@ -12,3 +12,7 @@ Repository for practice test as requirement of the selective process.
  - Test
     - `npm test`
 
+
+## Documentation
+The main ideia and fully documentation can be found in `docs` directory.
+
